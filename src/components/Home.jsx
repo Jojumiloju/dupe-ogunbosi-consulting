@@ -59,7 +59,7 @@ const Home = () => {
         </div>
         <div className='headline_right'>
           <h3>DUPE OGUNBOSI CONSULTING</h3><br />
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet modi, officiis accusantium, deserunt, incidunt nam quia mollitia ipsa sed fugit illo! Sunt maxime voluptas quam delectus autem veritatis aperiam illum?</p>
+          <p>Dupe Ogunbosi Consulting is a real estate company that provides affordable housing for people in Nigeria. We are a team of dedicated professionals who are committed to providing the best housing solutions for our clients. Our goal is to help people find their dream homes at affordable prices.</p>
         </div>
       </div>
 
@@ -70,9 +70,9 @@ const Home = () => {
 
       <div className='contact'>
         <div className='contact_text'>
-          <h1>Landing page title</h1>
-          <p>Add a subheading describing your site, too</p><br />
-          <Link to="/contactus"><button>Contact Us</button></Link>
+          <h1>Need assistance?</h1>
+          <p>Reach out to our team of professionals</p><br />
+          <Link to="/contact"><button>Contact Us</button></Link>
         </div>
         <div className='contact_image'><img src={sample} alt="sample" loading='lazy' /></div>
       </div>

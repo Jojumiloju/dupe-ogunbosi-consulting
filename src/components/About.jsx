@@ -44,7 +44,7 @@ const About = () => {
     <>
       <div className='about'>
         <h1>DUPE OGUNBOSI CONSULTING</h1>
-        <p>Dupe Ogunbosi Consulting is a real estate company that provides affordable housing for people in Nigeria. We are a team of dedicated professionals who are committed to providing the best housing solutions for our clients. Our goal is to help people find their dream homes at affordable prices. We have a wide range of properties available for sale and rent in different locations across Nigeria. Whether you are looking for a house, an apartment, or a commercial property, we have something for everyone. Contact us today to find your dream home!</p>
+        <p>We were registered with CAC as dee-primeproperties  in 2009 and we changed to Dupe Ogunbosi Consulting in 2021 after we had completed or NIESV and ESVARBON registrations. We have a wide range of properties available for sale and rent in different locations across Nigeria. Whether you are looking for a house, an apartment, or a commercial property, we have something for everyone. Contact us today to find your dream home!</p>
       </div>
 
 
