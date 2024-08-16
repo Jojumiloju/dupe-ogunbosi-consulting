@@ -1,0 +1,151 @@
+.about {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.about h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    font-stretch: condensed;
+    color: #B24C62
+}
+
+.about p {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.employees {
+    margin-top: 10rem;
+}
+
+.employee {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    margin-right: auto;
+    margin-left: auto;
+    max-width:15rem;
+    padding: 2rem 0rem;
+    border-radius: 1rem;
+    box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.employee > div > img {
+    height: 8rem;
+    width: 8rem;
+    border-radius: 50%;
+    box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.employee_details > p {
+    font-size: 0.8rem;
+}
+
+.excecutives {
+    padding: 2rem;
+    margin-top: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    align-items: center;
+    gap: 1rem;
+}
+
+.exec > div > img {
+    height: 8rem;
+    width: 8rem;
+    border-radius: 50%;
+}
+
+.exec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+    border-radius: 1rem;
+    min-width: 10rem;
+}
+
+.ex {
+    opacity: 0;
+    transform: translate(0,0);
+    transition: opacity 1s, transform 1s;
+}
+
+.example:hover{
+    .ex{
+        opacity: 1;
+        transform: translate(0,40px);
+    }
+}
+
+.employee_details {
+    text-align: center;
+}
+
+.about_services {
+    padding: 2rem;
+    justify-content: center;
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.about_services_child1 {
+    display: flex;
+    height: 12rem;
+    width: 70%;
+    gap: 2rem;
+}
+
+.about_services_child2 {
+    display: flex;
+    height: 12rem;
+    width: 70%;
+    gap: 2rem;
+    text-align: right;
+    margin-left: auto;
+}
+
+.about_services_child1 > div > h2 {
+    color: #027373;
+}
+
+.about_services_child2 > div > h2 {
+    color: #027373;
+}
+
+#root:hover {
+    .about_services_child1 > .child2 * {
+      opacity: 1;
+        transform: translate(80px, 0);
+    }        
+}
+
+#root:hover {
+    .about_services_child2 > .child2 * {
+        opacity: 1;
+          transform: translate(-80px, 0);
+      }
+}
+
+.child2_hidden *{
+    opacity: 0;
+}
+
+.child2 * {
+    opacity: 0;
+    transform: translate(0, 0);
+    transition: opacity 2s, transform 2s;
+    color: #027373;
+}

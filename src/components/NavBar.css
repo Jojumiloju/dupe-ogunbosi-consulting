@@ -1,0 +1,39 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-weight: 500;
+    padding: 0rem 2rem;
+}
+
+nav div{
+    font-size: 1.3rem;
+    padding: 1rem;
+}
+
+nav div:nth-child(1){
+    cursor:context-menu;
+    margin-left: 1rem;
+    line-height: 2rem;
+}
+
+nav div:nth-child(2) a{
+    padding: 1rem;
+    text-decoration: none;
+    border-bottom: transparent solid;
+    transition: border-bottom 0.3s ease-in;
+    line-height: 2rem;
+}
+
+nav div:nth-child(2) a:hover {
+    border-bottom: #006310 solid;
+}
+
+.active{
+    border-bottom: solid #006310;
+    color: #006310;
+}
+
+.active_icon *{
+    color:#006310
+}

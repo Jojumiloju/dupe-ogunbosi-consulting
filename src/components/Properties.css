@@ -1,0 +1,86 @@
+.sort_by > h2 {
+    margin-top: 5vh;
+    margin-bottom: 2vh;
+    font-size: 1.5rem;
+    color: #B24C62;
+    
+}
+
+.sort_by > div {
+    display: flex;
+    gap: 1rem;
+}
+
+.sort_by > div > button {
+    padding: 0.5rem 1rem;
+    border: solid #B24C62;
+    border-radius: 1rem;
+    background-color: #B24C62;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.sort_by > div > button:hover {
+    background-color:white;
+    color: #B24C62;
+}
+
+.property_card {
+    margin-top: 10vh;
+    display: flex;
+    flex-wrap: nowrap;
+    border-radius: 1rem;
+    width: fit-content;
+    height: 45vh;
+    box-shadow: 0px 1px 1px 2px rgba(0, 0, 0, 0.1); /* horizontal offset, vertical offset, blur radius, spread radius, color */
+    transition: box-shadow 0.3s ease-in;
+}
+
+.property_card:hover {
+    box-shadow: 0px 8px 8px 10px rgba(0, 0, 0, 0.1);
+}
+
+.property_card_image {
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    width: fit-content;
+    min-width: 20rem;
+}
+
+.property_card_image > img {
+    width: 100%;
+    height: 100%;   border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    
+}
+
+.property_card_details {
+    padding: 1rem;
+}
+
+.property_card_details *{
+    color: #027373;
+}
+
+.property_card_details :nth-child(1) > div{
+    margin-bottom: 1rem;
+    font-size: smaller;
+}
+
+.location { 
+    display: flex;
+}
+
+.red_color *{
+    color: #B24C62;
+}
+
+.room_icons {
+    display: flex;
+    gap: 1rem;
+}
+
+
+
+
