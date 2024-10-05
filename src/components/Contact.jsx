@@ -51,7 +51,7 @@ const Contact = () => {
             <div className='contact_map_details'>
               <div>
                 <FontAwesomeIcon icon={faPhone} className='map_details_icon' /><br />
-                <span> (802) 364 2269</span>
+                <span>0808 654 2644</span>
               </div>
               <div>
                 <FontAwesomeIcon icon={faLocationDot} className='map_details_icon'/><br />
@@ -72,7 +72,7 @@ const Contact = () => {
               <p>Valuer</p>
               <p>B.Tech Estate Managment (FUT Minna)</p>
               <p>Based in: Ibadan</p><br />  
-              <p>08086542644</p>
+              <p>0808 654 2644</p>
               <p>dupeogunbosiconsultingibadan@gmail.com</p>
             </div>
           </div>
@@ -83,8 +83,8 @@ const Contact = () => {
               <p>Management Surveyor</p>
               <p>HND Estate Management (Polytechnic Ibadan)</p>
               <p>Based in: Ibadan</p><br />              
-              <p>08086542644</p>
-              <p>dupeogunbosiconsultingibadan@gmail.com</p>
+              <p>0704 297 9637</p>
+              <p></p>
             </div>
           </div>
           <div className='agents_card'>
@@ -94,8 +94,8 @@ const Contact = () => {
               <p>Management Surveyor</p>
               <p>HND Estate Managemenet (Polytechnic Ibadan)</p>
               <p>Based in: Ibadan</p><br />
-              <p>08086542644</p>
-              <p>dupeogunbosiconsultingibadan@gmail.com</p>
+              <p>0902 279 3545</p>
+              <p></p>
             </div>
           </div>
         </div>
