@@ -71,20 +71,10 @@ const Contact = () => {
               <h4>Modupeoluwa Ogunbosi</h4>
               <p>Valuer</p>
               <p>B.Tech Estate Managment (FUT Minna)</p>
+              <p>MBA University of Ibadan (UI)</p>
               <p>Based in: Ibadan</p><br />  
               <p>0808 654 2644</p>
               <p>dupeogunbosiconsultingibadan@gmail.com</p>
-            </div>
-          </div>
-          <div className='agents_card'>
-            <div className='agent_img'><img src={sample} alt="" style={{height: '100%', width: '100%'}}/></div>
-            <div className='agent_info'>
-              <h4>Janet Olayinka Idowu</h4>
-              <p>Management Surveyor</p>
-              <p>HND Estate Management (Polytechnic Ibadan)</p>
-              <p>Based in: Ibadan</p><br />              
-              <p>0704 297 9637</p>
-              <p></p>
             </div>
           </div>
           <div className='agents_card'>
@@ -98,6 +88,39 @@ const Contact = () => {
               <p></p>
             </div>
           </div>
+          <div className='agents_card'>
+            <div className='agent_img'><img src={sample} alt="" style={{height: '100%', width: '100%'}}/></div>
+            <div className='agent_info'>
+              <h4>Oluwadamilare Popoola</h4>
+              <p>Management Surveyor</p>
+              <p>HND Estate Management Ede Polytechnic</p>
+              <p>Based in: Ibadan</p><br />              
+              <p>0704 297 9637</p>
+              <p></p>
+            </div>
+          </div>          
+          <div className='agents_card'>
+            <div className='agent_img'><img src={sample} alt="" style={{height: '100%', width: '100%'}}/></div>
+            <div className='agent_info'>
+              <h4>Nathaniel Adeyemi</h4>
+              <p>Management / Agency</p>
+              <p>HND Estate Management Ede Polytechnic</p>
+              <p>Based in: Ibadan</p><br />              
+              <p>0704 292 0516</p>
+              <p></p>
+            </div>
+          </div>          
+          <div className='agents_card'>
+            <div className='agent_img'><img src={sample} alt="" style={{height: '100%', width: '100%'}}/></div>
+            <div className='agent_info'>
+              <h4>Aishat Abdullahi</h4>
+              <p>Surveyor / Admin</p>
+              <p>HND Estate Management Kwara Polytechnic</p>
+              <p>Based in: Ibadan</p><br />              
+              <p>091 142 40204</p>
+              <p></p>
+            </div>
+          </div>          
         </div>
 
         <div className='form_details'>

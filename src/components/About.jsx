@@ -54,7 +54,7 @@ const About = () => {
           <img src={sample} alt="" />
         </div>        
           <div className='employee_details'>
-            <h4>Owner, Principal Partner</h4>
+            <h4>Principal Partner</h4>
             <p>ESV Modupeoluwa Ogunbosi</p>
             </div>
         </div>
@@ -76,7 +76,7 @@ const About = () => {
         </div>        
           <div className='employee_details'>
             <h4>Management Surveyor</h4>
-            <p>Janet Olayinka Idowu</p>
+            <p>Esther Fadero</p>
             </div>
           </div>
 
@@ -86,7 +86,27 @@ const About = () => {
         </div>        
           <div className='employee_details'>
             <h4>Management Surveyor</h4>
-            <p>Esther Fadero</p>
+            <p>Oluwadamilare Popoola</p>
+            </div>
+          </div>
+          
+          <div className='exec'>
+          <div>
+          <img src={sample} alt="" />
+        </div>        
+          <div className='employee_details'>
+            <h4>Management / Agency</h4>
+            <p>Nathaniel Adeyemi</p>
+            </div>
+          </div>
+          
+          <div className='exec'>
+          <div>
+          <img src={sample} alt="" />
+        </div>        
+          <div className='employee_details'>
+            <h4>Surveyor / Admin</h4>
+            <p>Aishat Abdullahi</p>
             </div>
           </div>
 
