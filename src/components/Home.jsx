@@ -65,7 +65,9 @@ const Home = () => {
 
       {/* Contains the search form */}
       <div className='search'>
+        <div><Link  to='/listings'><button className='search_button'>See property listings</button></Link></div>
         <div><Link  to='/listings'><button className='search_button'>Search for Your Dream Home</button></Link></div>
+        <div className='search_div'></div>
       </div>
 
       <div className='contact'>
@@ -108,51 +110,6 @@ const Home = () => {
           </div>
         </div>
       </div>
-
-      {/* <div className='testimonials'>
-        <h1>Testimonials</h1><br /><br /><hr />
-        <div className='testimonials_flexbox'>
-          <div className='testimonials_card'>
-            <p>1Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates.</p><br />
-            <img src={sample} alt="photo" />
-            <span>- John Doe</span>
-          </div>
-          <div className='testimonials_card'>
-            <p>2Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates.</p><br />
-            <img src={sample} alt="photo" />
-            <span>- John Doe</span>
-          </div>
-          <div className='testimonials_card'>
-            <p>3Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates.</p> <br />
-            <img src={sample} alt="photo" />
-            <span>- John Doe</span>
-          </div>
-          <div className='testimonials_card'>
-            <p>1Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates.</p><br />
-            <img src={sample} alt="photo" />
-            <span>- John Doe</span>
-          </div>
-          <div className='testimonials_card'>
-            <p>2Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates.</p><br />
-            <img src={sample} alt="photo" />
-            <span>- John Doe</span>
-          </div>
-          <div className='testimonials_card'>
-            <div className='App'>
-            <h1>Reat Modal Popup Example</h1>
-            <button onClick={openModal}>Open Modal</button>
-            <Popup
-              isOpen={modalIsOpen}
-              onRequestClose={closeModal}
-              content={<div>this is the content of the modal popup.</div>}/>
-          </div>
-          </div>
-          <div className='testimonials_card'>
-            <button> <img src={add} alt="add element" /></button>
-           
-          </div>
-        </div>
-      </div> */}
     </>
   )
 }

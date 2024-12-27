@@ -1,13 +1,16 @@
-.footer {
-    flex-wrap: wrap;
+.footer_wrapper{
     margin-top: 7rem;
+    border-top: #006310 solid 1px;  ;
+}
+
+.footer {
+    margin: auto;
+    flex-wrap: wrap;
     width: 70vw;
     display: flex;    
     background-color: white;
     justify-content: space-between;
     padding: 2rem;
-    border-top: #006310 solid;
-    border-bottom: #006310 solid;
 }
 
 .footer *{
@@ -15,7 +18,6 @@
 }
 
 .footer a {
-    color: #006310;
     transition: color 0.3s;
 }
 
@@ -63,7 +65,7 @@
 
 .footer_bottom {
     padding: 3rem;
-    background-color: white;
+    background-color: #006310;
     display: flex;
     justify-content: space-between;
 }
@@ -71,8 +73,14 @@
 .footer_bottom p {
     text-align: center;
     font-size: 0.8rem;
-    color: #006310;
+    color: white;
 }
+
+.footer_bottom a {
+    text-decoration: underline;
+    color: white;
+}
+
 
 .fa-linkedin *, .fa-twitter *, .fa-whatsapp *, .fa-instagram * {
     color: #006310;

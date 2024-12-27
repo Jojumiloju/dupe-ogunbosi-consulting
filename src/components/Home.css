@@ -15,14 +15,6 @@
     width: 100%;
 }
 
-.headline_left > p{
-    font-size: 15rem;
-    color: #006310;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* horizontal offset, vertical offset, blur radius, color */
-}
-
-
-
 .headline_right{
     width: 40%;
     padding: 3rem;
@@ -42,22 +34,17 @@
     margin-top: 15vw;
     height: 30vw;
     min-height: 15rem;
-    border-radius: 3rem;
-    background-image: url("../assets/Home13.jpeg");
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(2, 115, 115, 0.5)), url("../assets/Home13.jpeg");
     background-size: cover;
-    position: relative;
 }
 
 .search > div {
-    right: 0;
-    bottom: 0;
-    position: absolute;
-    border-top-left-radius: 2rem;
-    border-top: solid white 0.2rem;
     border-left: solid white 0.2rem;
-    color: #027373;
+    color: rgb(2, 115, 115);
     font-weight: bold;
+    background-color: transparent;
     transition: background-color 0.7s, color 0.7s;
+    backdrop-filter: blur(20px);
 }
 
 .search_button {
@@ -67,7 +54,7 @@
     padding: 2rem;
     border-top-left-radius: 2rem;
     border: none;
-    background-color: transparent;;
+    background-color: transparent;
 }
 
 .search > div:hover {
@@ -136,6 +123,8 @@
 }
 
 .services {
+    width: 80%;
+    margin: auto;
     margin-top: 15vw;
 }
 
@@ -143,15 +132,12 @@
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
-    justify-content:center;
 }
 
 .services_card{
     font-size: 1rem; 
     padding: 1.5rem;
     width: 15rem;
-    border-radius: 2rem;
-    border:#B24C62 solid 1px;
     transition: background-color 0.7s;
 }
 
@@ -201,74 +187,3 @@
 a {
     text-decoration: none;
 }
-
-/* .testimonials {
-    margin-top: 15vw;
-    display: flex;
-    flex-direction: column;
-}
-
-.testimonials hr {
-    color: #006310;
-    border: 1px solid;
-}
-
-.testimonials_flexbox {
-    width: 80vw;
-    max-width: 1200px;
-    display: grid;
-    grid-auto-flow: column;
-    overflow-x: auto;
-    padding: 1rem;
-    scroll-snap-type: inline mandatory;
-    scroll-snap-align: start;
-    scroll-padding-inline: 1rem;
-    box-sizing: border-box;
-}
-
-.testimonials_flexbox > div {
-    display: flex;
-    flex-direction: column;
-    flex-shrink: 0;
-    height: 300px;
-    scroll-snap-align: start;
-    scroll-behavior: smooth;
-    justify-content: center;
-    align-items: center;
-}
-
-.testimonials_card {
-    font-size: 1.3rem;
-    width: 25rem;
-    scroll-snap-align: center;
-    counter-increment: items 1;
-    padding: 1rem;
-    border-radius: 1rem;
-    margin: 1rem;
-    gap: 1rem;
-}
-
-.testimonials_card > img {
-    width: 3rem;
-    height: 3rem;
-    border-radius: 50%;
-}
-
-.testimonials_card > button {
-    background-color: white;
-    border: none;
-}
-
-.testimonials_card > button > img{
-    width: 150%;
-    height: 150%;
-}
-
-.testimonials_flexbox::-webkit-scrollbar {
-    height: 10px;
-  }
-
-.testimonials_flexbox::-webkit-scrollbar-thumb {
-    background: #006310;
-    border-radius: 7px;
-  } */

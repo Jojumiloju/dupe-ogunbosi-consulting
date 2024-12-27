@@ -9,16 +9,16 @@ import { faLocationDot, faPhone, faEnvelope } from '@fortawesome/free-solid-svg-
 
 const Footer = () => {
 
+    // Set up email and whatsapp links
     const email = 'dupeogunbosiconsultingibadan@gmail.com';
     const subject = 'Inquiry';
     const body = 'Good day, I have a question about... '
-
     const phoneNumber = '7042920516';
     const message = 'Hello I have a question about...';
 
+    // Create smooth animation for scrolling
     useEffect(() => {
-        const body = document.querySelector('#root');
-    
+        const body = document.querySelector('#root');    
         body.scrollIntoView({
             behavior: 'smooth'
         }, 500)
@@ -28,8 +28,9 @@ const Footer = () => {
   return (
     <>
     <div>
-        <div className='footer'>
-            <div className='footer_col1'>
+        <div className='footer_wrapper'>
+            <div className='footer'>
+                <div className='footer_col1'>
                 <h1>DUPE OGUNBOSI CONSULTING</h1>
                 <div>
                     <div><FontAwesomeIcon icon={faLocationDot} />
@@ -53,12 +54,11 @@ const Footer = () => {
                 <a href={`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`} target='_blank' rel='noopener nonreferrer' className='fa-whatsapp'><FontAwesomeIcon icon={faWhatsapp} size='2x' fixedWidth/></a>
                 <a href="https://www.linkedin.com/company/dupe-ogunbosi-consulting/about/" target='_blank' rel='noopener nonreferrer' className='fa-linkedin'><FontAwesomeIcon icon={faLinkedin} size='2x' fixedWidth /></a>
             </div>
+            </div>            
         </div>
-        <div>
-            <div className='footer_bottom'>            
+        <div className='footer_bottom'>        
             <p>© 2024 Deeprime Properties. All Rights Reserved</p>
-            <p>Designed by Jomiloju</p>
-        </div>
+            <p>Designed by <a href="https://github.com/Jojumiloju" target='blank'>Jojumiloju</a></p>
         </div>
         
     </div>
