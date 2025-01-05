@@ -2,7 +2,7 @@ import React from 'react'
 import { useEffect } from 'react'
 import { useInView } from 'react-intersection-observer'
 
-import sample from '../assets/sample1.png'
+import user_image from "../assets/employee_image.png"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBarsProgress, faCoins, faHeadset, faHelmetSafety, faMagnifyingGlassDollar, faPersonDigging, faUserTie } from '@fortawesome/free-solid-svg-icons'
 
@@ -49,9 +49,11 @@ const About = () => {
 
 
       <div className='employees'>
-        <div className='employee'>
+        <div className='employees_container'>
+          <div className='employee'>
+          <div></div>
         <div>
-          <img src={sample} alt="" />
+          <img src={user_image} alt="" />
         </div>        
           <div className='employee_details'>
             <h4>Principal Partner</h4>
@@ -61,18 +63,20 @@ const About = () => {
 
         <div className='employee'>
         <div>
-          <img src={sample} alt="" />
+          <img src={user_image} alt="" />
         </div>        
           <div className='employee_details'>
             <h3>Executive</h3>
             <p>Dr. Babatunde Ogunbosi</p>
             </div>
         </div>
+        </div>
+        
         
         <div className='excecutives'>
           <div className='exec'>
           <div>
-          <img src={sample} alt="" />
+          <img src={user_image} alt="" />
         </div>        
           <div className='employee_details'>
             <h4>Management Surveyor</h4>
@@ -82,7 +86,7 @@ const About = () => {
 
           <div className='exec'>
           <div>
-          <img src={sample} alt="" />
+          <img src={user_image} alt="" />
         </div>        
           <div className='employee_details'>
             <h4>Management Surveyor</h4>
@@ -92,7 +96,7 @@ const About = () => {
           
           <div className='exec'>
           <div>
-          <img src={sample} alt="" />
+          <img src={user_image} alt="" />
         </div>        
           <div className='employee_details'>
             <h4>Management / Agency</h4>
@@ -102,7 +106,7 @@ const About = () => {
           
           <div className='exec'>
           <div>
-          <img src={sample} alt="" />
+          <img src={user_image} alt="" />
         </div>        
           <div className='employee_details'>
             <h4>Surveyor / Admin</h4>
@@ -112,7 +116,7 @@ const About = () => {
 
           <div className='exec'>
           <div>
-          <img src={sample} alt="" />
+          <img src={user_image} alt="" />
         </div>        
           <div className='employee_details'>
             <h4>Valuer</h4>
@@ -127,15 +131,16 @@ const About = () => {
 
 
       <div className='about_services' id='services'>
+        <h1>What do we do?</h1><br />
         <div className='about_services_child1' >
           <div>
             <h2>Agency</h2>
             <p>We navigate the market, negotiate deals, market properties and collaborate with other professionals on behalf of the client.</p>
           </div>
-          <FontAwesomeIcon icon={faUserTie} size='8x' className={inView1 ? "child2" : "child2_hidden"} ref={ref1}></FontAwesomeIcon>
+          <FontAwesomeIcon icon={faUserTie} size='6x' className={inView1 ? "child2" : "child2_hidden"} ref={ref1}></FontAwesomeIcon>
         </div>
         <div className='about_services_child2'>
-        <FontAwesomeIcon icon={faBarsProgress} size='8x' ref={ref2} className={inView2 ? "child2" : "child2_hidden"}></FontAwesomeIcon>
+        <FontAwesomeIcon icon={faBarsProgress} size='6x' ref={ref2} className={inView2 ? "child2" : "child2_hidden"}></FontAwesomeIcon>
           <div>
             <h2>Management</h2>
             <p>Keep residential, commercial, and industrial real estate in good condition while creating budgets and generating income for owners.</p>
@@ -146,10 +151,10 @@ const About = () => {
             <h2>Consultancy</h2>
             <p>Evaluate real estate, discuess short and long-term goals and provide options for the best use of a given property.</p>
           </div>
-          <FontAwesomeIcon icon={faHeadset} size='8x' ref={ref3} className={inView3 ? "child2" : "child2_hidden"}></FontAwesomeIcon>
+          <FontAwesomeIcon icon={faHeadset} size='6x' ref={ref3} className={inView3 ? "child2" : "child2_hidden"}></FontAwesomeIcon>
         </div>
         <div className='about_services_child2'>
-        <FontAwesomeIcon icon={faPersonDigging} size='8x' ref={ref4} className={inView4 ? "child2" : "child2_hidden"}></FontAwesomeIcon>
+        <FontAwesomeIcon icon={faPersonDigging} size='6x' ref={ref4} className={inView4 ? "child2" : "child2_hidden"}></FontAwesomeIcon>
           <div>
             <h2>Development</h2>
             <p>Act as the contractor on a project on behalf of the client. Communicate with construction staff and monitor projects from process to completion.</p>
@@ -160,16 +165,17 @@ const About = () => {
             <h2>Valuation</h2>
             <p>We provide a range of services to property owners and landlords to help them effectively manage thier estate investments.</p>
           </div>
-          <FontAwesomeIcon icon={faMagnifyingGlassDollar} size='8x' ref={ref5} className={inView5 ? "child2" : "child2_hidden"}></FontAwesomeIcon>
+          <FontAwesomeIcon icon={faMagnifyingGlassDollar} size='6x' ref={ref5} className={inView5 ? "child2" : "child2_hidden"}></FontAwesomeIcon>
         </div>
         <div className='about_services_child2'>
-        <FontAwesomeIcon icon={faCoins} size='8x' ref={ref6} className={inView6 ? "child2" : "child2_hidden"}></FontAwesomeIcon>
+        <FontAwesomeIcon icon={faCoins} size='6x' ref={ref6} className={inView6 ? "child2" : "child2_hidden"}></FontAwesomeIcon>
           <div>
             <h2>Financial</h2>
             <p>We assist clients with commercial properties on loan amount, interest rates, and capacity to pay back when dealing with lending institutions.</p>
           </div>
-        </div>
-      </div>      
+        </div><br />
+        <p><a href="/contact">You can reach out to use here</a></p>
+      </div>     
     </>
   )
 }

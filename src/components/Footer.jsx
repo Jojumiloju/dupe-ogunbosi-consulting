@@ -36,7 +36,7 @@ const Footer = () => {
                     <div><FontAwesomeIcon icon={faLocationDot} />
                     <a href="https://maps.app.goo.gl/hHRbyuSkrMgnVs4p7" target='_blank'>No. 142, Fajuyi Street, Adamasingba, Opposite Alafia Hospital, Mokola Ibadan, Oyo State</a><br /></div>
                     <div><FontAwesomeIcon icon={faPhone} /><span>08086542644</span><br /></div>
-                    <div><FontAwesomeIcon icon={faEnvelope}/><a href={`mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`} target='_blank'>dupeogunbosiconsultingibadan@gmail.com</a><br /></div>
+                    <div><FontAwesomeIcon icon={faEnvelope}/><a style={{wordBreak: 'break-all'}} href={`mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`} target='_blank'>dupeogunbosiconsultingibadan@gmail.com</a><br /></div>
                     
                 </div>
             </div>
@@ -57,7 +57,7 @@ const Footer = () => {
             </div>            
         </div>
         <div className='footer_bottom'>        
-            <p>© 2024 Deeprime Properties. All Rights Reserved</p>
+            <p >© 2024 Deeprime Properties. All Rights Reserved. <span style={{textDecoration: 'underline', color: 'white'}}>Last updated: 05/01/2025</span></p>
             <p>Designed by <a href="https://github.com/Jojumiloju" target='blank'>Jojumiloju</a></p>
         </div>
         

@@ -186,7 +186,7 @@ const Properties = () => {
         },
         {
           name: '',
-          location: 'Adjacent Conoil filling station sitting on 5 plots of land for sale at Onibukun, Sange-Ota road',
+          location: 'Adjacent Conoil Onibukun, Sange-Ota road',
           bedrooms: '',
           bathrooms: '',
           condition: 'For Sale',
@@ -284,7 +284,7 @@ const Properties = () => {
       },
       {
         name: '',
-        location: 'Adjacent Conoil filling station sitting on 5 plots of land for sale at Onibukun, Sange-Ota road',
+        location: 'Adjacent Conoil Onibukun, Sange-Ota road',
         bedrooms: '',
         bathrooms: '',
         condition: 'For Sale',
@@ -627,7 +627,7 @@ const stateListings = [
   },
   {
     name: '',
-    location: 'Adjacent Conoil filling station sitting on 5 plots of land for sale at Onibukun, Sange-Ota road',
+    location: 'Adjacent Conoil Onibukun, Sange-Ota road',
     bedrooms: '',
     bathrooms: '',
     condition: 'For Sale',
@@ -635,7 +635,7 @@ const stateListings = [
     type: 'School',
     typeIcon: faSchool,
     price: '₦100m (asking)',
-    description: '',
+    description: 'The land is sitting on a % plot of land for sale',
     image: sample,
   },
     {
@@ -808,11 +808,11 @@ useEffect(() => {
                 return(
                   <div className='property_card'>
                     <div className='property_card_image' >
-                      {item.video ? <video src={item.video_link} controls style={{objectFit: 'contain', width: '100%', height: '100%', borderBottomLeftRadius: '1rem'}}></video>: <img src={item.image} alt="" />}                      
+                      {item.video ? <video src={item.video_link} controls></video>: <img src={item.image} alt="" />}                      
                     </div>
                     <div className='property_card_details'>
                       <div>
-                        <div style={{display: 'flex', justifyContent: 'space-between'}}>
+                        <div style={{display: 'flex', justifyContent: 'space-between', gap: '0.5rem'}}>
                           <div className='location'>
                           <FontAwesomeIcon icon={item.typeIcon} fixedWidth size='2x' style={{marginRight: '1rem'}}/><h3>{item.type}</h3>
                         </div>
@@ -829,7 +829,7 @@ useEffect(() => {
                           <FontAwesomeIcon icon={faBed}/><span>{item.bedrooms}</span><FontAwesomeIcon icon={faToilet}/><span>{item.bathrooms}</span>
                         </div>
                         <div>
-                          <p>{item.description}</p>
+                          <small>{item.description}</small>
                         </div> 
                       </div>
                     </div>
@@ -847,10 +847,11 @@ useEffect(() => {
         <button onClick={()=> setEditedListings(typeListings)}>Type</button>
         <button onClick={()=> setEditedListings(stateListings)}>State</button>
         </div>
-        
-
       </div>
-    {returnProperties()}
+    <div className='properties_list'>
+      {returnProperties()}
+    </div>
+    
 
     
 

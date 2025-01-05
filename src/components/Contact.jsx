@@ -1,4 +1,5 @@
 import React, { useRef } from 'react'
+import user_image from "../assets/user_image.png"
 import sample from "../assets/Home7.jpg"
 import "./Contact.css"
 import { useEffect } from 'react'
@@ -46,7 +47,7 @@ const Contact = () => {
     <>
         <div className="map_details">
             <div className='contact_map'>
-                <img src={sample} alt="sample" style={{height: '100%', width: '100%'}}/>
+                <img src={sample} alt="sample" style={{minHeight: '300px', width: '100%'}}/>
             </div>
             <div className='contact_map_details'>
               <div>
@@ -59,14 +60,14 @@ const Contact = () => {
               </div>
               <div>
                 <FontAwesomeIcon icon={faEnvelope} className='map_details_icon'/><br />
-                <a href={`mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`} target='_blank'>dupeogunbosiconsultingibadan @gmail.com</a>
+                <a style={{wordBreak: 'break-all'}} href={`mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`} target='_blank'>dupeogunbosiconsultingibadan@gmail.com</a>
               </div>
             </div>
         </div>
 
         <div className="agents_details">
           <div className='agents_card'>
-            <div className='agent_img'><img src={sample} alt="" style={{height: '100%', width: '100%'}}/></div>
+            <div className='agent_img'><img src={user_image} alt="" style={{height: '100%', width: '100%'}}/></div>
             <div className='agent_info'>
               <h4>Modupeoluwa Ogunbosi</h4>
               <p>Valuer</p>
@@ -78,7 +79,7 @@ const Contact = () => {
             </div>
           </div>
           <div className='agents_card'>
-            <div className='agent_img'><img src={sample} alt="" style={{height: '100%', width: '100%'}}/></div>
+            <div className='agent_img'><img src={user_image} alt="" style={{height: '100%', width: '100%'}}/></div>
             <div className='agent_info'>
               <h4>Esther Fadero</h4>
               <p>Management Surveyor</p>
@@ -89,7 +90,7 @@ const Contact = () => {
             </div>
           </div>
           <div className='agents_card'>
-            <div className='agent_img'><img src={sample} alt="" style={{height: '100%', width: '100%'}}/></div>
+            <div className='agent_img'><img src={user_image} alt="" style={{height: '100%', width: '100%'}}/></div>
             <div className='agent_info'>
               <h4>Oluwadamilare Popoola</h4>
               <p>Management Surveyor</p>
@@ -100,7 +101,7 @@ const Contact = () => {
             </div>
           </div>          
           <div className='agents_card'>
-            <div className='agent_img'><img src={sample} alt="" style={{height: '100%', width: '100%'}}/></div>
+            <div className='agent_img'><img src={user_image} alt="" style={{height: '100%', width: '100%'}}/></div>
             <div className='agent_info'>
               <h4>Nathaniel Adeyemi</h4>
               <p>Management / Agency</p>
@@ -111,7 +112,7 @@ const Contact = () => {
             </div>
           </div>          
           <div className='agents_card'>
-            <div className='agent_img'><img src={sample} alt="" style={{height: '100%', width: '100%'}}/></div>
+            <div className='agent_img'><img src={user_image} alt="" style={{height: '100%', width: '100%'}}/></div>
             <div className='agent_info'>
               <h4>Aishat Abdullahi</h4>
               <p>Surveyor / Admin</p>
@@ -124,6 +125,8 @@ const Contact = () => {
         </div>
 
         <div className='form_details'>
+          <h3>Do you still have unanswered questions?</h3>
+          <h3>Reach out to the team</h3><br />
           <form ref={form} onSubmit={sendEmail} className='form_form'>
         <label>Name</label>
         <input type="text" name="from_name" placeholder='Fullname'/>

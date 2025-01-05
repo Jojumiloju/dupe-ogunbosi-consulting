@@ -73,17 +73,17 @@
 }
 
 .form_details {
-    margin-top: 10rem;
+    min-width: 300px;
+    width: 50%;
+    margin: auto;
+    margin-top: 5rem;
 }
 
 .form_form {
-    margin-right: auto;
-    margin-left: auto;
     display: flex;
     flex-direction: column;
     padding: 2rem;
     background-color: #aee7b7;
-    max-width: 50rem;
     border-radius: 2rem;
 }
 
